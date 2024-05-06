@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;0,700;1,100;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  outline: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.activeSection>li{
+  color: black;
+}
+.fade-in{
+  animation: NavAnimate 3s 0.5 cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.fade-out{
+  animation: NavAnimate 3s 0.5 cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+#NavPop{
+  animation: NavAnimate 3s 0.5 cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+@keyframes NavAnimate {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  70%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+  
+}
+
+#therapist--btn{
+  font-size: 12px;
+  border-radius: 5px;
+  padding: 6px;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  width: 100px;
+}
+#contact__submit--btn{
+  width: 100%;
+}
+#SignupForm{
+  width: 32rem;
+}
+.sliderStyle{
+  height: 50rem;
+}
+#therapist__card{
+  border-top-right-radius: 55px;
+  border-bottom-left-radius: 55px;
+}
+@media all and (max-width: 900px){
+  .sliderStyle{
+    height: 30rem;
+  }
+  #SignupForm{
+    width: 80%;
+  }
+}
+/* Sliders Background Images */
+#pricingSlider{
+  background-image: url('./assets/images/female-doctor1.jpg');
+}
+#ContactUs__Slider{
+  background-image: url('./assets/images/male-doctor2.jpg');
+}
+
+
+#Contact__map--container{
+  background-image: url('./assets/images/background.png');
+}
+
+
+#pricing__contact--btn{
+  background-color: black;
+  
+}
+
+/* Services Page */
+#CancelAppointment{
+  background-color: black !important;
+  width: 100% ;
+}
+#BookNow__btn{
+  width: 200px;
+  background-color: black;
+}
+@media all and (max-width: 1125px){
+  #pricingCard__absolute{
+    position: relative !important;
+  }
+  #sideCards{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  #pricingCard__container{
+    display: flex;
+    flex-direction: column;
+  }
+  #slider__paragraph{
+    width: 70%;
+  }
+}
+@media all and (max-width: 500px){
+  #slider__paragraph{
+    width: 90%;
+  }
+  #SignupForm{
+    width: 100%;
+  }
+
+  #pricingDescription,#pricing__help{
+    padding: 20px;
+  }
+  .pricingCard--list{
+    gap: 5px;
+    font-family: 16px;
+  }
+  .pricingCard--list>img{
+    width: 12px;
+
+    height: 15px;
+  }
+  #Header--font{
+    font-size: 20px;
+  }
+  #footerResponsive{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #pricingCare__container{
+    width: 80%;
+    padding: 16px;
+    
+  }
+  #pricingCard__absolute{
+    justify-content: center !important;
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+
+
+}
+@media all and (max-width: 420px){
+  .ClickResponsive {
+    padding: 7px;
+    font-size: 15px;
+  }
+}
+
+/* Reusable Styles */
+@layer components{
+  .footerHead{
+    @apply text-white text-xl font-primaryFont font-bold 
+  }
+  .footerList{
+    @apply   text-lg font-sans text-white cursor-pointer flex items-center gap-2
+  }
+  .formLabel{
+    @apply font-interFont text-sm 
+  }
+  .formInput{
+    @apply border-gray-500 border p-2 px-4 outline-none  rounded-lg mb-2
+  }
+  .formError{
+    @apply text-red-500 font-interFont text-sm mb-2 hidden
+  }
+  .formContainer{
+    @apply w-full md:w-1/2  flex flex-col
+  }
+  .inputContainer{
+    @apply flex-col gap-1 flex 
+  }
+  .pricingCard--list{
+    @apply flex gap-2 text-center items-center font-sans text-lg cursor-pointer
+  }
+  #blueIcons{
+    @apply text-brandColor
+  }
+}
+
+
+/* Handle Popup */
+.removePayment{
+  display: none;
+}
