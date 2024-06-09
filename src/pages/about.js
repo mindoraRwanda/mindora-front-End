@@ -129,7 +129,7 @@ export const About = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="w-60 h-60 hidden md:flex ml-10" style={{background:`url(${why})`,backgroundPosition:"center",backgroundSize:"cover"}} ></div>
+                    <div className="w-60 h-60 hidden md:flex ml-10" style={{background:`url(${why})`,backgroundPosition:"center",backgroundSize:"cover", borderRadius: "20px"}} ></div>
                 </div>
                 </div>
             </div>
