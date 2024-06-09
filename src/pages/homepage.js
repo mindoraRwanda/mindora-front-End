@@ -3,9 +3,9 @@ import { Navigation } from "../components/navigation";
 import img1 from '../img/rec1.png';
 import img2 from '../img/rec2.png';
 import img3 from '../img/rec3.png';
-import back2 from '../assets/images/female-doctor2.jpg';
+import back2 from '../img/back2.webp';
 import back3 from '../assets/images/team5.png';
-import back4 from '../assets/images/male-doctor2.jpg';
+import back4 from '../img/back2.heic';
 import Therapist1 from '../assets/images/male-doctor1.jpg'
 import { Footer } from "../components/Footer/footer";
 import {AiFillStar} from 'react-icons/ai';
@@ -28,6 +28,7 @@ import neveragan from "../img/neveragan.jpg";
 import agis from "../img/aegis.png";
 import ur from "../img/ur.jpg";
 import klab from "../img/klab.png";
+import cmu from "../img/cmu.png"
 
 export const Homepage = () => {
 
@@ -107,7 +108,7 @@ export const Homepage = () => {
                     <h1 className="text-2xl csm:text-4xl xl:text-[45px] font-bold text-white text-center ">THERAPY IS FOR EVERYONE</h1>
                     <div className="relative mt-5 w-[90%] ml-[5%] text-white shadow-md shadow-[rgba(37,99,235,0.5)] ">
                         <div className="h-full overflow-hidden leading-5 csm:leading-6 p-6 csm:text-lg xl:text-xl ">
-                            Welcome to MINDORA, a safe and supportive online community dedicated to improving your mental health and well-being. We understand that life can be challenging at times, and we believe that everyone deserves access to resources and support that can help them navigate those challenges.<br/>
+                            Welcome to MINDORA, a groundbreaking AI-based system dedicated to enhancing your mental health and well-being. We understand that life can present numerous challenges, and we believe that everyone deserves access to intelligent tools and support that can help navigate these challenges effectively. MINDORA offers advanced predictive and preventive services to address mental health issues before they escalate, alongside a suite of other services designed to foster emotional resilience and overall wellness.<br/>
                         </div>
                     </div>
                 </div>
@@ -203,8 +204,12 @@ export const Homepage = () => {
                         <div className="w-24 text-xs text-center">Huye District</div>
                     </div>
                     <div className="flex-col w12 h-fit justify-center">
-                        <div className="flex-col mt-3 h-6 ml-6 w-12" style={{background:"url('https://www.rbc.gov.rw/fileadmin/templates/web/images/RBC-LOGO_Sept30_2019-Regular.png')",backgroundOrigin:"center",backgroundSize:"contain",backgroundRepeat:"no-repeat"}}></div>
-                        <div className="w-24 text-xs text-center">Rwanda Biomedical Center</div>   
+                        <div className="flex-col h-12 ml-6 w-12">
+                            <img src={cmu} alt="" className="w-full h-full object-contain"/>
+                        </div>
+                        <div className="w-24 text-xs text-center">
+                        Carnegie Mellon University Africa 
+                        </div>
                     </div>
                     <div className="flex-col w12 h-fit justify-center">
                         <div className="flex-col h-12 ml-6 w-12">

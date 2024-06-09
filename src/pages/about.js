@@ -14,7 +14,7 @@ import {GiHealingShield} from 'react-icons/gi';
 import {FaHandsHelping} from 'react-icons/fa';
 import {GiLifeInTheBalance} from 'react-icons/gi';
 import img1 from '../img/rec4.png';
-import why from '../img/why.png';
+import why from '../img/qt.webp';
 import { Footer } from "../components/Footer/footer";
 import { Member } from "../components/Cards/team-card";
 import Header from "../components/Header/header";
@@ -25,6 +25,14 @@ import team4 from "../img/team4.jpg";
 import team5 from "../img/team5.jpg";
 import team6 from "../img/team6.jpg";
 import team7 from "../img/team7.jpg";
+import team8 from "../img/team8.jpg";
+import team9 from "../img/team9.jpg";
+import team10 from "../img/team10.jpg";
+import team11 from "../img/team11.jpg";
+import team12 from "../img/team12.jpg";
+import team13 from "../img/team13.jpg";
+import test from "../img/secrenn.heic"
+
 
 export const About = () => {
     let loginStatus = Boolean(localStorage.getItem("loginstatus"));
@@ -62,7 +70,7 @@ export const About = () => {
             </div>
             <div className="flex-col flex items-center w-full sm:flex-row">
                 <div className="pl-20 w-full flex justify-end">
-                    <div className="flex h-80 w-full bg-black justify-end rounded-xl mt-20 lg:w-4/5" style={{background:"url('https://i.insider.com/5ec827273f73707932588946?width=700')",backgroundPosition:"center",backgroundSize:"cover"}}>
+                    <div className="flex h-80 w-full bg-black justify-end rounded-xl mt-20 lg:w-4/5" style={{background:`url(${test})`,backgroundPosition:"center",backgroundSize:"cover"}}>
                         <div className="h-20 w-20 -mt-7 shadow-md shadow-gray-400 -mr-10 bg-white rounded-full text-purple-500 flex items-center justify-center font-semibold text-3xl">5+</div>
                     </div>
                 </div>
@@ -111,29 +119,32 @@ export const About = () => {
                         <div className="flex w-full h-fit justify-center md:justify-end">
                             <div className="w-fit h-fit flex rounded-3xl border-grey-300 border-2 bg-white md:-mr-[50%] lg:-mr-[20%] mt-5 z-10">
                                 <div className="w-fit h-fit py-2 px-12 text-3xl sm:text-5xl font-semibold flex flex-col items-center border-r-2 border-grey-300">
-                                    <div>15k<sup>+</sup></div>
+                                    <div>5k<sup>+</sup></div>
                                     <div className="text-base font-normal">Users</div>
                                 </div>
                                 <div className="w-fit h-fit py-2 px-12 text-3xl sm:text-5xl font-semibold flex flex-col items-center">
-                                    <div>15k<sup>+</sup></div>
+                                    <div>10<sup>+</sup></div>
                                     <div className="text-base font-normal">Therapists</div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="w-60 h-60 hidden md:flex ml-10" style={{background:`url(${why})`,backgroundPosition:"center",backgroundSize:"cover"}} ></div>
+                    <div className="w-60 h-60 hidden md:flex ml-10" style={{background:`url(${why})`,backgroundPosition:"center",backgroundSize:"cover", borderRadius: "20px"}} ></div>
                 </div>
                 </div>
             </div>
             <div className="font-semibold text-xl w-full bg-white text-center sm:text-2xl md:text-3xl lg:5xl mt-8 mb-8">Meet Our Team</div>
                 <div className="w-full h-fit flex flex-col items-center gap-5 mb-10 bg-white sm:flex-row flex-wrap sm:justify-center md:px-10 lg:px-40 lg:gap-10 xl:px-40 xl:gap-20">
-                    <Member img={team1} mname={"Kwizera Rulinda"} task={"CEO of MINDORA"}/>
-                    <Member img={team4} mname={"Muhire Leon Pierre"} task={"Marketing Director"}/>
-                    <Member img={team3} mname={"Noella Nizigama"} task={" Psychologist"}/>
-                    <Member img={team2} mname={"Uwirora  Gilbert"} task={"Clinical Psychologist"}/>
-                    <Member img={team5} mname={"Murenzi Patrick"} task={"Clinical Psychologist"}/>
-                    <Member img={team6} mname={"Nsengiyumva Athanaze"} task={"Clinical Psychologist"}/>
-                    <Member img={team7} mname={"Ishimwe Kevin"} task={"Software Engineer"}/>
+                    <Member img={team1} mname={"Kwizera Rulinda"} role={"CEO of MINDORA"} specialty={"Clinical Psychologist"}/>
+                    <Member img={team13} mname={"Bizimana Clement"} role={"COO of MINDORA"} specialty={"Business Operations"}/>
+                    <Member img={team12} mname={"M. Lisa Cynthia"} role={"MEDICAL DIRECTOR"} specialty={"Psychiatrist & Psychologist"}/>
+                    <Member img={team3} mname={"Noella Nizigama"} role={"Content Creator"} specialty={"Clinical Psychologist"}/>
+                    <Member img={team7} mname={"Kevin Ishimwe"} role={"Product & Software Developement Officer"} specialty={"Software Engineer"}/>
+                    <Member img={team8} mname={"Takudzwa Tarutira"} role={"CTO"} specialty={"AI and Machine leaning Engineer"}/>
+                    <Member img={team10} mname={"Mutesi Josephine"} role={"CPO"} specialty={"UI/UX designer"}/>
+                    <Member img={team4} mname={"Muhire Leon Pierre"} role={"Marketing Director"} specialty={"Business & Market Strategist"}/>
+                    <Member img={team11} mname={"Uwicyeza Pamella"} role={"Communication Officer"} specialty={"Business  Development"}/>
+                    <Member img={team9} mname={"Gahire Hubert"} role={"Disability & Inclusion Expert"} specialty={"Medical Doctor"}/>
                 </div>
             <Footer/>
         </div>

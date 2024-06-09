@@ -1,15 +1,18 @@
 import React from "react";
 
-export const Member = ({mname,task,img}) => {
-    return(
-        <div className="w-80 h-80 flex flex-col justify-end shadow-md shadow-gray-400" style={{background:``,backgroundPosition:"center",backgroundSize:"cover"}}>
-            <img src={img} className="w-full h-64 object-cover object-center" alt=""/>
-            <div className="h-fit w-full text-white bg-purple-600">
-            <div className="font-normal text-xl text-center mt-2">
-                {mname}
-                <div className="font-light text-sm mb-2">{task}</div>
-            </div>
-            </div>
-        </div>
-    )
-}
+export const Member = ({ mname, role, specialty, img }) => {
+  return (
+    <div className="w-80 h-96 relative overflow-hidden rounded-lg shadow-lg">
+      <img
+        src={img}
+        className="w-full h-full object-cover object-center"
+        alt=""
+      />
+      <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-purple-600 to-transparent p-4">
+        <h2 className="text-2xl font-bold text-white">{mname}</h2>
+        <p className="text-white">{role}</p>
+        <p className="text-white">{specialty}</p>
+      </div>
+    </div>
+  );
+};

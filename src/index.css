@@ -73,10 +73,10 @@ code {
 }
 /* Sliders Background Images */
 #pricingSlider{
-  background-image: url('./assets/images/female-doctor1.jpg');
+  background-image: url('./img/bn.heic');
 }
 #ContactUs__Slider{
-  background-image: url('./assets/images/male-doctor2.jpg');
+  background-image: url('./img/contact.heic');
 }
 
 
