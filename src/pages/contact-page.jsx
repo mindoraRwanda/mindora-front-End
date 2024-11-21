@@ -53,7 +53,7 @@ const ContactUs =()=>{
                             <p className="font-sans text-base md:text-lg mb-4">Want to Hear From You and Our Team will respond as soon as possible.e want 
                             to Hear From You and Our Team will respond as soon as possible.</p>
                             <ul className=" flex gap-y-5 mb-8 flex-col ">
-                                <li className="pricingCard--list"><AiOutlineMail  id="blueIcons"/>tryme@gmail.com</li>
+                                <li className="pricingCard--list"><AiOutlineMail  id="blueIcons"/>info@mindora.rw</li>
                                 <li className="pricingCard--list"><BsFillPhoneVibrateFill  id="blueIcons"/>Phone</li>
                                 <li className="pricingCard--list"><CiLocationOn  id="blueIcons"/> Gikondo, Kigali-Rwanda</li>
                             </ul>
